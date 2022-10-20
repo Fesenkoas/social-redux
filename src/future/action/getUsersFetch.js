@@ -8,6 +8,7 @@ import {
 } from "../redux/userSlice";
 
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
+const API_KEY ="a9ce9252-9216-4a7b-9d67-9f4bbacb4303"
 const instanseGet = {
   mode: 'no-cors',
   credentials: "include",
@@ -15,7 +16,7 @@ const instanseGet = {
   headers: {
 //     "Access-Control-Allow-Origin": "no-cors",
 //      'Content-Type': 'application/json',
-    "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+    "API-KEY": API_KEY,
   },
 };
 
@@ -24,7 +25,7 @@ const instansePost = {
   credentials: "include",
   method: "POST",
   headers: {
-    "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+    "API-KEY": API_KEY,
   },
 };
 
@@ -33,7 +34,7 @@ const instanseDelete = {
   credentials: "include",
   method: "DELETE",
   headers: {
-    "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+    "API-KEY": API_KEY,
   },
 };
 
