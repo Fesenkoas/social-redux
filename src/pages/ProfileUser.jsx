@@ -5,9 +5,9 @@ import {
   getFollowFetch,
   getProfileFetch,
   postFollowFetch,
+  deleteFollowFetch
 } from "../future/action/getUsersFetch";
 import { useSelector } from "react-redux";
-import { deleteFollowFetch } from "./../future/action/getUsersFetch";
 import AboutMe from "../component/AboutMe";
 
 export const ProfileUser = () => {
