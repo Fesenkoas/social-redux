@@ -119,7 +119,7 @@ export const Setting = () => {
     dispatch(getProfileFetch("24948"));
     dispatch(getStatus());
     loadState();
-  }, [dispatch]);
+  }, [dispatch, loadState]);
 
   return (
     <>
