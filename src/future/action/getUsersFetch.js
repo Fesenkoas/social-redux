@@ -9,7 +9,6 @@ import {
 
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 const instanseGet = {
-  cache: 'default',
   mode: 'cors',
   credentials: "include",
   method: "GET",
@@ -21,7 +20,6 @@ const instanseGet = {
 };
 
 const instansePost = {
-  cache: 'default',
   mode: 'cors',
   credentials: "include",
   method: "POST",
@@ -31,7 +29,6 @@ const instansePost = {
 };
 
 const instanseDelete = {
-  cache: 'default',
   mode: 'cors',
   credentials: "include",
   method: "DELETE",
