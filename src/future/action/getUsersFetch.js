@@ -9,7 +9,7 @@ import {
 
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 const instanseGet = {
-  mode: 'no-cors',
+  mode: 'cors',
   method: "GET",
   headers: {
 //     "Access-Control-Allow-Origin": "no-cors",
