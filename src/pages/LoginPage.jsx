@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 //import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
-import { getCapchaFetch, putLoginFetch } from "./../future/action/loginFetch";
+import { getCapchaFetch, putLoginFetch } from "../future/action/loginFetch";
 import { useSelector } from "react-redux";
 
 export const LoginPage = () => {
