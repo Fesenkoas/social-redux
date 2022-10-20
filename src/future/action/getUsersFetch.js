@@ -10,7 +10,7 @@ import {
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 const API_KEY ="a9ce9252-9216-4a7b-9d67-9f4bbacb4303"
 const instanseGet = {
-  mode: 'no-cors',
+  mode: 'cors',
   credentials: "include",
   method: "GET",
   headers: {
