@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector, useCallback } from "react-redux";
 import {
   getProfileFetch,
   getStatusFetch,
@@ -119,7 +119,7 @@ export const Setting = () => {
     dispatch(getProfileFetch("24948"));
     dispatch(getStatus());
   }, [dispatch]);
-  useEffect(() => {
+  useCallback(() => {
     loadState();
   }, [loadState]);
 
