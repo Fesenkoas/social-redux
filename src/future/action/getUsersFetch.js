@@ -19,6 +19,7 @@ const instanseGet = {
 };
 
 const instansePost = {
+  mode: 'cors',
   credentials: "include",
   method: "POST",
   headers: {
@@ -27,6 +28,7 @@ const instansePost = {
 };
 
 const instanseDelete = {
+  mode: 'cors',
   credentials: "include",
   method: "DELETE",
   headers: {
