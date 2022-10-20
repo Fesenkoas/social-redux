@@ -118,8 +118,10 @@ export const Setting = () => {
   useEffect(() => {
     dispatch(getProfileFetch("24948"));
     dispatch(getStatus());
+  }, [dispatch]);
+  useEffect(() => {
     loadState();
-  }, [dispatch, loadState]);
+  }, [loadState]);
 
   return (
     <>
