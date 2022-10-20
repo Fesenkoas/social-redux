@@ -2,13 +2,13 @@ import { getCapcha, getMe } from "../redux/loginSlice";
 
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 
-const instansePost = {
-    credentials: "include",
-    method: "POST",
-    headers: {
-      "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
-    },
-  };
+// const instansePost = {
+//     credentials: "include",
+//     method: "POST",
+//     headers: {
+//       "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+//     },
+//   };
 
   const instanseDelete = {
     credentials: "include",
