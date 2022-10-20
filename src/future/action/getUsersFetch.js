@@ -53,8 +53,8 @@ export const deleteFollowFetch = (id) => (dispatch) => {
 };
 //get all list users
 export const getFollowFetch = () => (dispatch) => {
-  let pagesCount;
-  const allUser=[]
+//   let pagesCount;
+//   const allUser=[]
   fetch(`${baseURL}users`, instanseGet)
     .then((res) => res.json())
     .then((data) =>dispatch(getFollowed(data)));
