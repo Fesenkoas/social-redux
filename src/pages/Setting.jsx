@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getProfileFetch,
@@ -30,7 +30,7 @@ import { getStatus } from "../future/redux/userSlice";
 export const Setting = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { profile, loading, status } = useSelector((state) => state.user);
+  const { profile, loading } = useSelector((state) => state.user);
   const { message } = useSelector((state) => state.message);
 
   const [facebook, setFacebook] = useState("");
@@ -47,22 +47,22 @@ export const Setting = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [newStatus, setStatus] = useState("");
 
-  const loadState = () => {
-    if (loading) {
-      setFacebook(profile.contacts.facebook);
-      setGithub(profile.contacts.github);
-      setInstagram(profile.contacts.instagram);
-      setMainLink(profile.contacts.mainLink);
-      setTwitter(profile.contacts.twitter);
-      setVk(profile.contacts.vk);
-      setWebsite(profile.contacts.website);
-      setYoutube(profile.contacts.youtube);
-      setAboute(profile.aboutMe);
-      setForJob(profile.lookingForAJobDescription);
-      setIsChecked(profile.lookingForAJob);
-      setStatus(status);
-    }
-  };
+//   const loadState = () => {
+//     if (loading) {
+//       setFacebook(profile.contacts.facebook);
+//       setGithub(profile.contacts.github);
+//       setInstagram(profile.contacts.instagram);
+//       setMainLink(profile.contacts.mainLink);
+//       setTwitter(profile.contacts.twitter);
+//       setVk(profile.contacts.vk);
+//       setWebsite(profile.contacts.website);
+//       setYoutube(profile.contacts.youtube);
+//       setAboute(profile.aboutMe);
+//       setForJob(profile.lookingForAJobDescription);
+//       setIsChecked(profile.lookingForAJob);
+//       setStatus(status);
+//     }
+//   };
 
   const handleOnChange = () => {
     setIsChecked(!isChecked);
@@ -118,10 +118,8 @@ export const Setting = () => {
   useEffect(() => {
     dispatch(getProfileFetch("24948"));
     dispatch(getStatus());
+     //loadState();
   }, [dispatch]);
-  useCallback(() => {
-    loadState();
-  }, [loadState]);
 
   return (
     <>
