@@ -9,8 +9,8 @@ import {
 
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 const instanseGet = {
-  mode: 'same-origin',
-//   credentials: "include",
+  mode: '*cors',
+  credentials: "include",
   method: "GET",
   headers: {
 //     "Access-Control-Allow-Origin": "no-cors",
@@ -20,8 +20,8 @@ const instanseGet = {
 };
 
 const instansePost = {
-  mode: 'cors',
-//   credentials: "include",
+  mode: '*cors',
+  credentials: "include",
   method: "POST",
   headers: {
     "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
@@ -29,8 +29,8 @@ const instansePost = {
 };
 
 const instanseDelete = {
-  mode: 'cors',
-//   credentials: "include",
+  mode: '*cors',
+  credentials: "include",
   method: "DELETE",
   headers: {
     "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
