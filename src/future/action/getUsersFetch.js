@@ -9,6 +9,7 @@ import {
 
 const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 const instanseGet = {
+  credentials: "omit",
   method: "GET",
   headers: {
     "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
