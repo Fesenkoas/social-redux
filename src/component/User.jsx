@@ -4,7 +4,7 @@ import {
   deleteFollowFetch,
   getUsersFetch,
   postFollowFetch,
-} from "./../future/action/getUsersFetch";
+} from "../future/action/getUsersFetch";
 import { useNavigate } from "react-router-dom";
 
 export const User = ({ user, page, changePage }) => {
