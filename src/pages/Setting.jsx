@@ -5,6 +5,7 @@ import {
   getStatusFetch,
   putPRofileFullFetch,
   putStatusFetch,
+  putPhotoFetch,
 } from "../future/action/getUsersFetch";
 import {
   FaFacebook,
@@ -17,7 +18,6 @@ import {
   FaChrome,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { putPhotoFetch } from "./../future/action/getUsersFetch";
 import { toast } from "react-toastify";
 import { getStatus } from "../future/redux/userSlice";
 
