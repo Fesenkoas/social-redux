@@ -76,11 +76,12 @@ export const getProfileFetch = (id) => (dispatch) => {
 export const putStatusFetch = (newData) => (dispatch) => {
   dispatch(loading(false));
   fetch(`${baseURL}profile/status`, {
+    mode: 'cors',
     credentials: "include",
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
-      "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+      "API-KEY": API_KEY,
     },
     body: JSON.stringify(newData),
   })
@@ -91,11 +92,12 @@ export const putStatusFetch = (newData) => (dispatch) => {
 export const putPRofileFullFetch = (newData) => (dispatch) => {
   dispatch(loading(false));
   fetch(`${baseURL}profile`, {
+    mode: 'cors',
     credentials: "include",
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
-      "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+      "API-KEY": API_KEY,
     },
     body: JSON.stringify(newData),
   })
@@ -112,10 +114,11 @@ export const getStatusFetch = () => (dispatch) => {
 export const putPhotoFetch = (newData) => (dispatch) => {
   dispatch(loading(false));
   fetch(`${baseURL}profile/photo`, {
+    mode: 'cors',
     credentials: "include",
     method: "PUT",
     headers: {
-      "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
+      "API-KEY": API_KEY,
     },
     body: newData,
   })
