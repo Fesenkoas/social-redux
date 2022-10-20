@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 export const Message = () => {
   const dispatch = useDispatch();
-  const { users, loading } = useSelector((state) => state.user);
+  //const { users, loading } = useSelector((state) => state.user);
 
 
 
