@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { count } from "./../constant/const";
-import {getUsersFetch} from "./../future/action/getUsersFetch";
+import { count } from "../constant/const";
+import {getUsersFetch} from "../future/action/getUsersFetch";
 import { User } from "../component/User";
 
 export const ListUsers = () => {
