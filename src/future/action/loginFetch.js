@@ -11,6 +11,7 @@ const baseURL = "https://social-network.samuraijs.com/api/1.0/";
 //   };
 
   const instanseDelete = {
+    mode: 'cors',
     credentials: "include",
     method: "DELETE",
     headers: {
@@ -19,6 +20,7 @@ const baseURL = "https://social-network.samuraijs.com/api/1.0/";
   };
 
   const instanseGet = {
+    mode: 'cors',
     credentials: "include",
     method: "GET",
     headers: {
