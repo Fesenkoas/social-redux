@@ -14,14 +14,14 @@ const instanseGet = {
   method: "GET",
   headers: {
 //     "Access-Control-Allow-Origin": "no-cors",
-     'Content-Type': 'application/json',
+//      'Content-Type': 'application/json',
     "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
   },
 };
 
 const instansePost = {
   mode: 'cors',
-//   credentials: "include",
+  credentials: "include",
   method: "POST",
   headers: {
     "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
@@ -30,7 +30,7 @@ const instansePost = {
 
 const instanseDelete = {
   mode: 'cors',
-//   credentials: "include",
+  credentials: "include",
   method: "DELETE",
   headers: {
     "API-KEY": "e6c298d2-d468-4ac0-a9d1-f103800c1b8a",
